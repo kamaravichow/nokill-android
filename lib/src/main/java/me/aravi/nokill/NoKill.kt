@@ -2,8 +2,10 @@ package me.aravi.nokill
 
 import android.os.Handler
 import android.os.Looper
+import androidx.annotation.Keep
 
 
+@Keep
 class NoKill {
     private var mCrashHandler: CrashHandler? = null
     private var instance: NoKill? = null
