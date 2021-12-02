@@ -3,6 +3,10 @@ Android library that captures global crashes 🦀 , so that your application nev
 
 [![](https://jitpack.io/v/kamaravichow/nokill-android.svg)](https://jitpack.io/#kamaravichow/nokill-android)
 
+## GIF
+
+![Sample](demo.gif)
+
 ## Add to your project 📇
 
 Add it in your root build.gradle at the end of repositories:
