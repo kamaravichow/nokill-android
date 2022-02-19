@@ -1,71 +1,17 @@
-# 📵 NoKILL 🔪
+## 📵 NoKILL 🔪
+[**Docs**](https://docs.aravi.me/android/nokill/overview) |
+[**Installation**](https://docs.aravi.me/android/nokill/installation) |
+[**Usage**](https://docs.aravi.me/android/nokill/usage) |
+[**Release Notes**](https://docs.aravi.me/android/nokill/release-notes) |
+
 Android library that captures global crashes 🦀 , so that your application never really crashes
 
 [![](https://jitpack.io/v/kamaravichow/nokill-android.svg)](https://jitpack.io/#kamaravichow/nokill-android)
 
-## GIF
+## Preview
 
 ![Sample](demo.gif)
 
-## Add to your project 📇
-
-Add it in your root build.gradle at the end of repositories:
-
-```groovy
-repositories {
-    maven { url 'https://jitpack.io' }
-}
- ```
-Now, add the dependency :
-```groovy
-  implementation 'com.github.kamaravichow:nokill-android:1.0.0'
-```
-
-## Usage Guide 🤠
-
-Initialise 
-```kotlin
-NoKill.init(crashHandler)
- ```
- 
-#### Best Practice 😋
-
-Best practice to use this library is to initialise it in application class, this will help avoid all kinds of crashes your application can go through.
-
-```kotlin
-class App : Application() {
-
-    override fun onCreate() {
-        super.onCreate()
-
-        // initialise no kill
-        NoKill().init(object : CrashHandler {
-            override fun uncaughtException(t: Thread, e: Throwable) {
-                showToastOnUIThread(e.message)
-            }
-        })
-
-
-    }
-
-
-    fun showToastOnUIThread(message: String?) {
-        Handler(Looper.getMainLooper()).post {
-            Toast.makeText(
-                applicationContext,
-                message,
-                Toast.LENGTH_SHORT
-            ).show()
-        }
-    }
-}
-```
-Checkout the [**DEMO app**](https://github.com/kamaravichow/nokill-android/tree/main/app/src/main/java/me/aravi/packages/nokill) in the project for more information 
-  
-## Like the work ?
-Feel free to drop a star or start a discussion. Looking forward to colaborate with you guys
-
-These works take time, if this library really helped you. You can drop a small token of worth here [PATREON](https://www.patreon.com/kamaravichow?fan_landing=true)
 
 ## License
 
