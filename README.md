@@ -13,6 +13,20 @@ Android library that captures global crashes 🦀 , so that your application nev
 ![Sample](demo.gif)
 
 
+## Usage
+
+```
+implementation 'com.github.kamaravichow:nokill-android:1.0.0'
+```
+
+Don't forget to add this to app level build gradle
+```
+
+repositories {
+ maven { url 'https://jitpack.io' }
+}
+```
+
 ## License
 
 ```
