@@ -1,6 +1,6 @@
 ## 📵 NoKILL 🔪
 [**Docs**](https://docs.aravi.me/android/nokill/overview) |
-[**Installation**](https://docs.aravi.me/android/nokill/installation) |
+[**Installation**](https://github.com/kamaravichow/nokill-android/wiki/Installation) |
 [**Usage**](https://docs.aravi.me/android/nokill/usage) |
 [**Release Notes**](https://docs.aravi.me/android/nokill/release-notes) |
 
